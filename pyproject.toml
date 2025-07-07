@@ -1,0 +1,13 @@
+[project]
+name = "crondash"
+version = "0.1.0"
+description = "A lightweight task registry and disk-aware cron dashboard"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "croniter",
+    "pyyaml"
+]
+
+[project.scripts]
+crondash = "crondash.cli:main" 

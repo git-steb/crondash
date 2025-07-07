@@ -1,0 +1,12 @@
+# crondash configuration
+artifacts_dir: ./artifacts
+crontab: ./crontab/mycrontab.txt
+log_level: INFO
+
+# Task settings
+task_timeout: 300  # seconds
+max_artifact_age: 30  # days
+
+# System integration
+launch_agent_label: com.example.crondash
+launch_agent_interval: 300  # seconds 

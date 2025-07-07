@@ -1,0 +1,25 @@
+# disk_watch tool configuration
+name: "disk_watch"
+description: "Monitor disk usage and Docker storage"
+script: "disk_watch.py"
+
+# Suggested scheduling options
+suggested_schedules:
+  daily: "0 9 * * *"      # Daily at 9 AM
+  weekly: "0 9 * * 0"     # Weekly on Sunday at 9 AM
+  twice_daily: "0 9,18 * * *"  # Twice daily at 9 AM and 6 PM
+
+# Default schedule (can be overridden in crontab)
+default_schedule: "0 9 * * *"
+
+# Example crontab entry
+example_crontab: "0 9 * * * /usr/bin/python3 tools/disk_watch.py"
+
+# What this tool monitors
+monitors:
+  - "System volume disk usage"
+  - "Docker storage consumption"
+  - "System library assets size"
+
+# Output location
+output_dir: "artifacts/disk_watch" 
