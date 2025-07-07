@@ -9,6 +9,5 @@ __pycache__/
 
 # crondash specific
 artifacts/
-tools/logs
 .env/
 .envrc

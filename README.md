@@ -100,8 +100,6 @@ crondash/
 │   └── com.example.crondash.plist  # LaunchAgent plist template
 ├── tools/                      # Optional utility tools
 │   └── disk_watch.py           # Disk usage monitoring tool
-├── env/                        # Environment configuration
-│   └── environment.yml         # Conda environment (optional)
 ├── Pipfile                     # Pipenv dependencies (optional)
 ├── pyproject.toml              # Python package configuration
 ├── requirements.txt            # Python dependencies
@@ -133,7 +131,6 @@ crondash/
 
 **Installation:**
 - `crondash.rb` - Homebrew formula for system-wide installation
-- `env/environment.yml` - Conda environment (optional)
 
 ---
 

@@ -216,8 +216,8 @@ def init():
     # Create ~/.crondash directory and symlink dot-crontab
     pass
 
-# Add command handling in the main function
-if __name__ == "__main__":
+def main():
+    """Main entry point for the crondash CLI"""
     if len(sys.argv) < 2:
         show_help()
         sys.exit(1)
@@ -258,3 +258,7 @@ if __name__ == "__main__":
         log(f"Unknown command: {command}")
         show_help()
         sys.exit(1)
+
+# Add command handling in the main function
+if __name__ == "__main__":
+    main()
